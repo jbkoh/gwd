@@ -93,7 +93,7 @@ def status(prefix):
     rv = []
     for l in r.text.splitlines():
         parts = l.split("\t")
-        rv.append({"state":parts[0], "name":parts[1],"expire":parts[2], "cumdtime":int(parts[3]), "reason":parts[4]})
+        rv.append({"state":parts[0], "name":parts[1],"expire":parts[2], "reason":parts[3]})
     return rv
 
 def auth(prefix):
